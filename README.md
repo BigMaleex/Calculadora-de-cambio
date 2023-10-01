@@ -1,2 +1,2 @@
 # Calculadora-de-cambio
-Resolución al problema de definir cuanto se había consumido de producto de una paletería, y cuánto dinero debía darse de cambio.
+Eres libre de copiar y/o mejorar mi trabajo
