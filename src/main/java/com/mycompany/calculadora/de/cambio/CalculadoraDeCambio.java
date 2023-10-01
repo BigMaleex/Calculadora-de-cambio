@@ -90,13 +90,14 @@ public class CalculadoraDeCambio {
         double change = (din - productos);
         double cambio = din- productos;
         
-        int []monbil = {1000, 500, 200, 100, 50, 20, 10, 5, 2, 1};
-        int []Nummonbil ={0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        
+        double []monbil = {1000, 500, 200, 100, 50, 20, 10, 5, 2, 1, 0.50, 0.20, 0.10};
+        int[] nummonbil = new int[monbil.length];
         
         
         for (int i = 0; i < monbil.length; i++) {
             while (change >= monbil[i]){
-                Nummonbil [i]++;
+                nummonbil [i]++;
                 change-=monbil[i];
             }
         }
@@ -112,15 +113,16 @@ public class CalculadoraDeCambio {
         
         System.out.println("Tienes que devolver la siguiente cantidad de dinero:"+cambio);
         System.out.println("En billetes o monedas sería:");
-        System.out.println("Billetes de 1000 pesos:" + Nummonbil[0]);
-        System.out.println("Billetes de 500 pesos:" + Nummonbil[1]);
-        System.out.println("Billetes de 200 pesos:" + Nummonbil[2]);
-        System.out.println("Billetes de 100 pesos:" + Nummonbil[3]);
-        System.out.println("Billetes de 50 pesos:" + Nummonbil[4]);
-        System.out.println("Billetes de 20 pesos:" + Nummonbil[5]);
-        System.out.println("Monedas de 10 pesos:" + Nummonbil[6]);
-        System.out.println("Monedas de 5 pesos:" + Nummonbil[7]);
-        System.out.println("Monedas de 2 pesos:" + Nummonbil[8]);
-        System.out.println("Monedas de 1 peso:" + Nummonbil[9]);     
-    }
-}
+        System.out.println("Billetes de 1000 pesos:" + nummonbil[0]);
+        System.out.println("Billetes de 500 pesos:" + nummonbil[1]);
+        System.out.println("Billetes de 200 pesos:" + nummonbil[2]);
+        System.out.println("Billetes de 100 pesos:" + nummonbil[3]);
+        System.out.println("Billetes de 50 pesos:" + nummonbil[4]);
+        System.out.println("Billetes de 20 pesos:" + nummonbil[5]);
+        System.out.println("Monedas de 10 pesos:" + nummonbil[6]);
+        System.out.println("Monedas de 5 pesos:" + nummonbil[7]);
+        System.out.println("Monedas de 2 pesos:" + nummonbil[8]);
+        System.out.println("Monedas de 1 peso:" + nummonbil[9]); 
+        System.out.println("Monedas de 50 centavos:" + nummonbil[10]); 
+        System.out.println("Monedas de 20 centavos:" + nummonbil[11]);
+        System.out.println("Monedas de 10 centavos:" + nummonbil[12]);
